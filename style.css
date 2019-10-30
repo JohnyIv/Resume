@@ -1,0 +1,233 @@
+body {
+  background-color: #132128;
+  font-family: "Kelly Slab", "Kelly Font", sans-serif;
+  color:#ffffff;
+  position: relative;
+}
+
+div span {
+  margin:10px;
+}
+
+.bg-info {
+  background-color: rgba(196,196,196,0.03);
+  
+}
+
+.main_page {
+  max-width: 1024px;
+  margin:auto;
+}
+
+.logo {
+  opacity: 0.1;
+  left: 60%;
+  position: absolute;
+  top: 90%;
+}
+
+.pers {
+  display: flex;
+}
+
+.ava {
+  width: 100%;
+  
+
+}
+
+li {
+  list-style: none;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+
+/*Экстрамалые девайсы «портретные телефоны», < 576px*/
+
+
+@media screen and (min-width: 150px) and (max-width: 575.98px) {
+  .main_page {
+    padding: 15% 5%;
+  }
+
+  .pers {
+    flex-direction: column;
+  }
+
+  .pers_info {
+    margin: 50px 0;
+  }
+  .span {
+    margin: 30px 0;
+  }
+
+  .logo {
+    top: 60vh;
+    width:40%;
+    left: 50%;
+    position: absolute;
+  }
+
+  .ava {
+    
+    
+  
+  }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .main_page {
+    padding: 7% 4%;
+  }
+
+  .pers {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .pers_info {
+    width: 45%;
+  }
+
+  .pers_tech_info {
+    margin-top:20px;
+  }
+
+  .span {
+    margin: 30px 0;
+  }
+
+  .logo {
+    top: 0;
+    width:40%;
+  }
+
+  .ava {
+    width: 100%;
+    max-width: 250px;
+   
+  }
+ }
+
+ /*Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main_page {
+    padding: 7% 4%;
+  }
+
+  .pers {
+    flex-wrap: wrap;
+  }
+
+  .pers_info {
+    margin-left: 5%;
+    width: 30%;
+  }
+
+  .pers_tech_info {
+    margin-top:30px;
+  }
+
+  .span {
+    margin: 30px 0;
+  }
+
+  .logo {
+    top: 0;
+    width:40%;
+  }
+
+  .ava {
+    width: 100%;
+    max-width: 250px;
+  }
+ }
+
+ /*Большие девайсы (большие десктопы, >= 992px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .main_page {
+    padding: 7% 4%;
+  }
+
+  .pers {
+    flex-wrap: wrap;
+  }
+
+  .pers_info {
+    margin-left: 5%;
+    width: 30%;
+  }
+
+  .pers_tech_info {
+    margin-top:30px;
+    width: 60%;
+    
+  }
+
+  .span {
+    margin: 30px 0;
+  }
+
+  .logo {
+    top: 70%;
+    width:20%;
+  }
+
+  .ava {
+    width: 100%;
+    max-width: 250px;
+  }
+ }
+
+ /*Большие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 1200px) {
+  .main_page {
+    padding: 7% 4%;
+  }
+
+
+  .pers_info {
+    margin: 50px 0;
+  }
+  .span {
+    margin: 30px 0;
+  }
+
+  .logo {
+    top: 70%;
+    width:20%;
+  }
+
+  .ava {
+    width: 100%;
+    max-width: 250px;
+  
+  } 
+}
+
+@font-face {
+  font-family: "Kelly Font";
+  src: url("./fonts/KellySlab-Regular.ttf"); 
+}  
